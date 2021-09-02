@@ -1,12 +1,14 @@
 import occurences from "../data/occurences.json";
 import { scoreFromOccurences } from "./utils";
-import shortHash from "shorthash2";
+import { hashItem } from "../src/hash-item";
 
 type Occurences = Record<string, number>;
 
 async function main() {
   const hashedItems = Object.entries(occurences as Occurences).map(
-    ([name, occurences]) => [shortHash(name), occurences]
+    ([name, occurences]) => {
+      return [hashItem(name), occurences]
+    }
   );
 
   const uniques = new Set(hashedItems.map(([hash]) => hash)).size;

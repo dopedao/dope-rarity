@@ -18,9 +18,9 @@ The rarity level of any given item is deducted from its number of occurrences in
 ## Installation
 
 ```sh
-npm i --save loot-rarity # npm
-yarn add loot-rarity # yarn
-pnpm add loot-rarity # pnpm
+npm i --save gear-rarity # npm
+yarn add gear-rarity # yarn
+pnpm add gear-rarity # pnpm
 ```
 
 ## API
@@ -116,7 +116,7 @@ It accepts any of the following:
 Example with React, [use-nft](https://github.com/spectrexyz/use-nft) to load the image, and [swr](https://github.com/vercel/swr) to handle the async function:
 
 ```jsx
-import { rarityImage } from "loot-rarity";
+import { rarityImage } from "gear-rarity";
 import { useNft } from "use-nft";
 import useSWR from "swr";
 
@@ -150,7 +150,7 @@ This function is similar to rarityImage, except it only accepts an array of item
 Example:
 
 ```js
-import { rarityImageFromItems } from "loot-rarity";
+import { rarityImageFromItems } from "gear-rarity";
 
 const bag = [
   "Grimoire",
@@ -175,17 +175,14 @@ Have a look at [the demo app](https://5e0cs.csb.app/) on CodeSandbox to see how 
 You can also run it from this repository:
 
 ```sh
-# Install pnpm if needed
-npm i -g pnpm
-
-# Build loot-rarity
-pnpm i
-pnpm build
+# Build gear-rarity
+yarn
+yarn build
 
 # Run the demo app
 cd demo
-pnpm i
-pnpm dev
+yarn
+yarn dev
 ```
 
 ## Thanks

@@ -1,7 +1,7 @@
 {
-  "name": "loot-rarity",
+  "name": "gear-rarity",
   "version": "3.0.0",
-  "description": "Get the rarity level of a Loot (lootproject.com) item",
+  "description": "Get the rarity level of a DopeWars Gear item",
   "author": "Pierre Bertet",
   "license": "MIT",
   "main": "dist/index-node.js",

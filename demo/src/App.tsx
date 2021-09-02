@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="app">
       <div className="header">
-        <h1>Loot Rarity Demo</h1>
+        <h1>Gear Rarity Demo</h1>
         <h2>
           <label htmlFor="bag-input">Bag #</label>
 
@@ -63,7 +63,7 @@ function App() {
           <span style={{ color: "crimson" }}>divine robes</span>.*/}
         </p>
         <p>
-          <a href="https://github.com/bpierre/loot-rarity" target="_blank">
+          <a href="https://github.com/bpierre/gear-rarity" target="_blank">
             GitHub
           </a>
         </p>

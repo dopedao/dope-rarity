@@ -1,7 +1,7 @@
 import type { ColorFn, RarityLevel } from "./types";
 
 import itemsRarity from "../data/items-rarity-hashes.json";
-import shortHash from "shorthash2";
+import { hashItem } from "./hash-item";
 import rarityLevels from "./rarity-levels";
 
 let cachedItemsrarity = null;
@@ -9,11 +9,11 @@ let cachedItemsrarity = null;
 export function itemRarity(itemName: string): RarityLevel {
   if (!cachedItemsrarity) {
     cachedItemsrarity = itemsRarity.map(
-      (items: string) => new Set(items.match(/.{1,5}/g))
+      (items: string) => new Set(items.match(/.{1,7}/g))
     );
   }
 
-  const hash = shortHash(itemName);
+  const hash = hashItem(itemName);
 
   let index = 6;
   while (index--) {
