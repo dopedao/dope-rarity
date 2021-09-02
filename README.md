@@ -186,7 +186,7 @@ yarn dev
 ```
 
 ## Thanks
-
+- [@scotato](https://github.com/bpierre) for [github.com/bpierre/loot-rarity](https://github.com/bpierre/loot-rarity), the original implementation.
 - [@scotato](https://github.com/scotato) for [github.com/scotato/inventory](https://github.com/scotato/inventory), loot-rarity was heavily inspired by it.
 - [@Anish-Agnihotri](https://github.com/Anish-Agnihotri) for [the data](https://github.com/Anish-Agnihotri/dhof-loot) he extracted from Loot and that loot-rarity is using.
 
