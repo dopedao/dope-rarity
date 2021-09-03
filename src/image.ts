@@ -20,15 +20,15 @@ const SVG_START =
   '<text x="123" y="30" fill="#AF87D7">DOPE WARS LOOT</text>' +
   '<text x="77" y="30" fill="#00AFAF">* * *</text>' +
   '<text x="235" y="30" fill="#00AFAF">* * *</text>' +
-  '<text x="75" y="70" fill="#808080" font-size="8px" text-anchor="end">Weapon</text>' +
-  '<text x="75" y="101" fill="#808080" font-size="8px" text-anchor="end">Vehicle</text>' +
-  '<text x="75" y="132" fill="#808080" font-size="8px" text-anchor="end">Drug</text>' +
-  '<text x="75" y="163" fill="#808080" font-size="8px" text-anchor="end">Clothes</text>' +
-  '<text x="75" y="194" fill="#808080" font-size="8px" text-anchor="end">Hands</text>' +
-  '<text x="75" y="225" fill="#808080" font-size="8px" text-anchor="end">Shoes</text>' +
-  '<text x="75" y="256" fill="#808080" font-size="8px" text-anchor="end">Neck</text>' +
-  '<text x="75" y="287" fill="#808080" font-size="8px" text-anchor="end">Ring</text>' +
-  '<text x="75" y="318" fill="#808080" font-size="8px" text-anchor="end">Waist</text>';
+  '<text x="75" y="70" fill="#808080" font-size="8px" text-anchor="end">Clothes</text>' +
+  '<text x="75" y="101" fill="#808080" font-size="8px" text-anchor="end">Shoes</text>' +
+  '<text x="75" y="132" fill="#808080" font-size="8px" text-anchor="end">Hands</text>' +
+  '<text x="75" y="163" fill="#808080" font-size="8px" text-anchor="end">Neck</text>' +
+  '<text x="75" y="194" fill="#808080" font-size="8px" text-anchor="end">Ring</text>' +
+  '<text x="75" y="225" fill="#808080" font-size="8px" text-anchor="end">Wait</text>' +
+  '<text x="75" y="256" fill="#808080" font-size="8px" text-anchor="end">Weapon</text>' +
+  '<text x="75" y="287" fill="#808080" font-size="8px" text-anchor="end">Drugs</text>' +
+  '<text x="75" y="318" fill="#808080" font-size="8px" text-anchor="end">Vehicle</text>';
 const SVG_END = "</svg>";
 
 export function svgFromItems(
@@ -41,8 +41,6 @@ export function svgFromItems(
     displayLevels?: boolean;
   } = {}
 ) {
-  items = [items[6], items[8], items[7], items[0], items[2], items[1], items[3], items[4], items[5]]
-
   if (items.length !== 9) {
     throw new Error("A bag should contain exactly 9 items");
   }
