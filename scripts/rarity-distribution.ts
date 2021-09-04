@@ -16,8 +16,7 @@ async function main() {
   );
 
   const total = levels.reduce((total, count) => count + total, 0);
-  // NOTE(tvanas): Should this be 8000 * 9? Where does the extra 57 come from.
-  if (total !== 72057) {
+  if (total !== 8000 * 9) {
     throw new Error("Wrong total");
   }
 
@@ -35,10 +34,10 @@ async function main() {
 
     console.log(
       " " +
-        `${description}:`.padEnd(11) +
-        `${thresholdLabel}`.padStart(12) +
-        `${percentage}%`.padStart(10) +
-        ` (${items} items)`.padStart(14)
+      `${description}:`.padEnd(11) +
+      `${thresholdLabel}`.padStart(12) +
+      `${percentage}%`.padStart(10) +
+      ` (${items} items)`.padStart(14)
     );
   });
 
