@@ -4,7 +4,7 @@ import {
   rarityDescription,
   rarityImageFromItems,
 } from "../..";
-import loot from "../../data/loot.json";
+import loot from "dope-metrics/output/loot.json";
 
 type ItemRarityInfo = {
   color?: string;
